@@ -1,0 +1,34 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: url("../../assets/images/rainbow-crystal-background.jpg") no-repeat 50% 50% fixed;
+    background-size: cover;
+}
+
+.game_instructions {
+    color: black;
+    background-color: white;
+    opacity: 0.8;
+    max-width: 300px;
+    text-align: left;
+    line-height: 24px;
+}
+
+.game_section {
+    
+}
+
+.crystals {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.crystal {
+    border: 1px solid black;
+    height: 200px;
+    width: 200px;
+}
