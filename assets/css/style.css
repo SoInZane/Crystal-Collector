@@ -5,53 +5,116 @@
 body {
     background: url("../../assets/images/rainbow-crystal-background.jpg") no-repeat 50% 50% fixed;
     background-size: cover;
-    font-family: 'Shadows Into Light', cursive;
+    font-family: 'Shadows Into Light', cursive;    
+}
+
+.header {
+    opacity: 0.8;
+    max-width: 720px;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bolder;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: bold black;
+    background-color: whitesmoke;
+    border: 5px solid orange;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+h2 {
+    margin-top: 8px;
+}
+
+h3 {
+    color: black;
+    background-color: whitesmoke;
+    border-bottom: 5px solid orange;
+    text-align: center;
+    font-size: 28px;
 }
 
 .game_instructions {
-    color: white;
-    background-color: black;
+    font-weight: bold;
+    color: black;
+    background-color: whitesmoke;
     border: 5px solid orange;
-    opacity: 0.6;
-    max-width: 600px;
+    opacity: 0.8;
+    max-width: 720px;
     text-align: left;
-    line-height: 30px;
+    line-height: 40px;
     padding: 10px;
     margin: auto;
 }
 
-.game_section {
+#tally_section {
+    overflow: hidden;
+    text-align: center;
+    align-content: center;
+    font-size: 20px;
+    font-weight: bold;
+    white-space: nowrap;
+    -moz-box-sizing:    border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    max-width: 600px;
+    margin: auto;
+}
+
+.targetNumber, .winsAndLosses, .userScore {
+   
     color: black;
+    background-color: whitesmoke;
+    border: 5px solid orange;
+    opacity: 0.8;
+    justify-content: space-around;
+    display: inline-block;
+    height: 50px;
+    width: 160px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    vertical-align: middle;
     
 }
 
-.goalNumber {
-    color: black;
-    height: 50px;
+.targetNumber {
+    margin-left: auto;
+    float: left;
 }
 
-#goal_number {
-    padding: top 20px;
-    top: 20px;
+.winsAndLosses {
+    margin-right: 60px;
+    margin-left: 60px;
+    float: left;
+    display: flex;
+}
 
+.userScore {
+    float: left;
+}
+
+#crystal_content {
+    clear: both;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: auto;
+    overflow: hidden;
+    align-content: center;
+    -moz-box-sizing:    border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    max-width: 720px;
+    margin: auto;
 }
 
 .crystals {
-    /* display: flex; */
-    justify-content: space-around;
-    align-items: center;
-    margin: auto;
-    left: 200px;
-    
-
+    float: left;
 }
 
-img {
-    background-color: black;
-    opacity: 0.6;
-    border: 5px solid orange;
-    height: 150px;
-    width: 150px;
-    margin: auto;
-    
+.crystal_image {
+    height: 120px;
+    width: 120px;
 }
