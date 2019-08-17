@@ -17,6 +17,10 @@ $(document).ready(function() {
     var wins = 0;
     var losses = 0;
 
+    var winningSound = new Audio("assets/audio/crystal_effect.mp3")
+    var lossingSound = new Audio("assets/audio/shatter.mp3")
+
+
 // use jquery to tally wins and losses
 $("#wins").text(wins);
 $("#losses").text(losses);
@@ -39,6 +43,7 @@ function reset() {
 function win() {
     alert("Winner, Winner!");
     wins++;
+    winningSound.play();
     $("#wins").text(wins);
     reset();
 }
@@ -47,6 +52,7 @@ function win() {
 function lose() {
     alert("Better luck next time!");
     losses++;
+    lossingSound.play();
     $("#losses").text(losses);
     reset();
 }
